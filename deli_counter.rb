@@ -7,7 +7,6 @@ def line(array)
 		puts "The line is currently:"
 		i = 0
 		while i < array.length
-			item = array[i]
 			puts "#{i + 1}. #{array[i]}"
 			i += 1
 		end
@@ -21,11 +20,11 @@ end
 
 def now_serving(array)
 	if array.empty?
-		puts "There is nobody waiting to be served!"
+		puts "There is nobody waiting to be served."
 	else
 		puts "Currently serving #{array[0]}."
+		array.shift
 	end
-	array.shift
 end
 
 # END methods section
