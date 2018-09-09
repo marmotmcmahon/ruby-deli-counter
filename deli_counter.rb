@@ -1,12 +1,22 @@
 # START methods section
 
 def line(array)
-	#shows everyone current place in line. Says empty if empty.
+	if array.empty?
+		puts "The line is currently empty."
+	else
+		puts "The line is currently:"
+		i = 0
+		while i < array.length
+			item = array[i]
+			puts "#{i + 1}. #{array[i]}"
+			i += 1
+		end
+	end
 end
 
 def take_a_number(array, customer)
 	array.push(customer)
-	puts "#{customer}: #{array.length}"
+	puts "Welcome, #{customer}. You are number #{array.length}"
 end
 
 def now_serving(array)
@@ -22,8 +32,5 @@ end
 
 katz_deli = []
 
-take_a_number(katz_deli, "Ada") #=> Welcome, Ada. You are number 1 in line.
-take_a_number(katz_deli, "Grace") #=> Welcome, Grace. You are number 2 in line.
-take_a_number(katz_deli, "Kent") #=> Welcome, Kent. You are number 3 in line.
 
-puts katz_deli
+line(katz_deli)
