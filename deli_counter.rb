@@ -1,11 +1,7 @@
 # START methods section
 
 def line(array)
-	# shows current place in line. If empty, should say "The line is currently empty."
-	if array.length == 0
-		puts "The line is currently empty"
-	else
-		puts "You are currently number #{ array.length } in line."
-	end
+	#shows everyone current place in line. Says empty if empty.
 end
+
 # END methods section
