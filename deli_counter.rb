@@ -5,7 +5,8 @@ def line(array)
 end
 
 def take_a_number(array, customer)
-	puts "#{customer}: #{array.length + 1}"
+	array.push(customer)
+	puts "#{customer}: #{array.length}"
 end
 
 def now_serving(array)
