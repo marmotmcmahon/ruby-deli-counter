@@ -16,3 +16,5 @@ def now_serving(array)
 end
 
 # END methods section
+
+katz_deli = []
